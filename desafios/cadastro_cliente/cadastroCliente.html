@@ -6,106 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Cliente</title>
-    <style>
-        header {
-            height: 85px;
-            background-color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="css/cadastroCliente.css">
 </head>
 
 <body>
     <section>
         <header>
-            <img src="img/logoAmericanas.jpg" alt="logoamericanas" width="152px" height="33.7">
+            <img src="img/logoAmericanas.jpg" alt="logoamericanas" width="152px" height="33.7" class="logo">
         </header>
-        <div>
-            <h2>Criar seu cadastro</h2>
-            <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
-            <p>
-                <span>*</span>
-                Campos obrigatórios
-            </p>
-        </div><br>
-        <section>
-            <form action="">
-                <div>
-                    <label>
-                        <span>*</span>
-                        Nome completo
-                    </label><br>
-                    <input type="text" name="nomeCompleto" class="" id="">
-                </div><br>
-                <div>
-                    <label>
-                        <span>*</span>
-                        Gênero
-                    </label><br>
-                    <span>pra gente te conhecer um pouquinho melhor :)</span><br>
-                    <input type="radio" name="opcoes">Feminino
-                    <input type="radio" name="opcoes">Masculino
-                    <input type="radio" name="opcoes">Não informar
-                </div><br>
-                <div>
-                    <label>
-                        <span>*</span>
-                        Data de Nascimento
-                    </label><br>
-                    <span>Necessário pra identificar a maioridade no formato DD/MM/AAAA</span><br>
-                    <input type="date" name="dataDenascimento" id="" placeholder="__ /__ /____">
-                </div><br>
-                <div>
-                    <label><span>*</span>
-                        CPF
-                    </label><br>
-                    <span>Necessario pra emissão das Notas Fiscais</span><br>
-                    <input type="tel" name="cpf" id="" placeholder="___.___.___-__">
-                </div><br>
-                <a href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas" target="_blank">é pessoa
-                    juridica? conheça a americanas empresas</a><br><br>
-                <div>
-                    <label>
-                        <span>*</span>
-                        Telefone
-                    </label><br>
-                    <span>Caso a gente precise entrar em contato sobre seus pedidos</span><br>
-                    <input type="tel" name="telefone" placeholder="(__)_____-____">
-                </div><br>
-                <div>
-                    <input type="checkbox" name="recebernotificacao" id="">
-                    <span>Receber notificações por Whatsapp ?</span>
-                </div><br>
-                <div>
-                    <label>
-                        <span>*</span>
-                        E-mail
-                    </label><br>
-                    <input type="email" name="email" id="">
-                </div><br>
-                <div>
-                    <input type="checkbox" name="noticacaoemail" id="">
-                    <span>Receber e-mails promocionais ?</span>
-                </div><br>
-                <div>
-                    <label>
-                        <span>*</span>
-                        Senha
-                    </label><br>
-                    <span>Precisa ter entre 6 a 20 caracteres</span><br>
-                    <input type="password" name="senha" id="">
-                </div><br>
-                <!--Colocar aqui o medidor de senhas. **Pesquisar como faz**-->
-                <div>
-                    <input type="checkbox" name="compartilhadados" id="">
-                    <span>compartilhar meus dados com parceiros para ter conteúdos personalizados, veja <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade" target="_blank">como funciona</a></span>
-                </div><br>
-                <div>
-                    <button type="submit" value="enviarDados">Criar seu cadastro</button>
-                </div>                 
-            </form>
-            <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade" target="_blank"><b>Política de Privacidade</b></a></p>
-            <p>ja tem cadastro ? <a href="https://cliente.americanas.com.br/simple-login/" target="_blank">Entrar</a></p>
-        </section> 
-    </section>
+        <section class="formulario">
+            <div class="criarCadastro">
+                <h2>Criar seu cadastro</h2>
+                <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
+                <p>
+                    <span>*</span>
+                    Campos obrigatórios
+                </p>
+            </div><br>
+            <section class="dadosCliente">
+                <form action="" class="formularioDados">
+                    <div class="nome">
+                        <label>
+                            <span>*</span>
+                            Nome completo
+                        </label><br>
+                        <input type="text" name="nomeCompleto" class="">
+                    </div><br>
+                    <div>
+                        <label>
+                            <span>*</span>
+                            Gênero
+                        </label><br>
+                        <span>pra gente te conhecer um pouquinho melhor :)</span><br>
+                        <input type="radio" name="opcoes">Feminino
+                        <input type="radio" name="opcoes">Masculino
+                        <input type="radio" name="opcoes">Não informar
+                    </div><br>
+                    <div>
+                        <label>
+                            <span>*</span>
+                            Data de Nascimento
+                        </label><br>
+                        <span>Necessário pra identificar a maioridade no formato DD/MM/AAAA</span><br>
+                        <input type="date" name="dataDenascimento" id="" placeholder="__ /__ /____">
+                    </div><br>
+                    <div>
+                        <label><span>*</span>
+                            CPF
+                        </label><br>
+                        <span>Necessario pra emissão das Notas Fiscais</span><br>
+                        <input type="tel" name="cpf" id="" placeholder="___.___.___-__">
+                    </div><br>
+                    <a href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas" target="_blank">é pessoa
+                        juridica? conheça a americanas empresas</a><br><br>
+                    <div>
+                        <label>
+                            <span>*</span>
+                            Telefone
+                        </label><br>
+                        <span>Caso a gente precise entrar em contato sobre seus pedidos</span><br>
+                        <input type="tel" name="telefone" placeholder="(__)_____-____">
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="recebernotificacao" id="">
+                        <span>Receber notificações por Whatsapp ?</span>
+                    </div><br>
+                    <div>
+                        <label>
+                            <span>*</span>
+                            E-mail
+                        </label><br>
+                        <input type="email" name="email" id="">
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="noticacaoemail" id="">
+                        <span>Receber e-mails promocionais ?</span>
+                    </div><br>
+                    <div>
+                        <label>
+                            <span>*</span>
+                            Senha
+                        </label><br>
+                        <span>Precisa ter entre 6 a 20 caracteres</span><br>
+                        <input type="password" name="senha" id="">
+                    </div><br>
+                    <!--Colocar aqui o medidor de senhas. **Pesquisar como faz**-->
+                    <div>
+                        <input type="checkbox" name="compartilhadados" id="">
+                        <span>compartilhar meus dados com parceiros para ter conteúdos personalizados, veja <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade" target="_blank">como funciona</a></span>
+                    </div><br>
+                    <div>
+                        <button type="submit" value="enviarDados">Criar seu cadastro</button>
+                    </div>                 
+                </form>
+                <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade" target="_blank"><b>Política de Privacidade</b></a></p>
+                <p>ja tem cadastro ? <a href="https://cliente.americanas.com.br/simple-login/" target="_blank">Entrar</a></p>
+            </section> 
+        </section>
 </body>
 </html>

@@ -1,0 +1,69 @@
+header {
+    height: 85px;
+    background-color: rgb(248, 0, 50);
+    box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    margin-left: 8vw ;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.formulario {
+    color: rgb(102, 102, 102);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 56px;
+}
+
+.criarCadastro {
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    align-items: flex-start;
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 26px;
+    box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dadosCliente {
+    justify-content: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    box-pack: center;
+    box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.formularioDados {
+    width: 100%;
+    margin: 0;
+    display: flex ;
+    flex-direction: column;
+    margin: auto;
+    box-sizing: border-box;
+    box-pack: center;
+    box-align: center;
+    align-items: center;
+}
+
+.nome {
+    position: relative;
+}
+
+
